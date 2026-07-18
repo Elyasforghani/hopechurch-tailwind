@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheet/output.css">
+    <link rel="shortcut icon" href="assets/img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/stylesheet/input.css">
+    <title>Hope city church</title>
+
+
+</head>
+
+<style>
+    body {
+        font-family: MyLocalFont;
+    }
+    @font-face {
+   font-family: 'MyLocalFont'; 
+   src: url('assets/font/Rubik-VariableFont_wght.ttf') format('truetype');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+ }
+
+    .sec1 {
+        background-image: url(assets/img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body class="bg-black  text-white w-full ">
+
+    <main class="w-[95%]  mx-auto min-h-screen">
+        <div class="sec1 w-full  ">
+            <header id="main-header"
+                class="fixed top-3 left-3 z-50 flex w-full items-center justify-between px-6 py-4 ">
+                <span
+                    class=" flex items-center gap-3 p-3.5 relative z-10 text-amber-50/80 hover:translate-x-2 transition-all duration-300   ">
+                    <svg class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707">
+                        </path>
+                    </svg>
+                    <h4 class="text-lg font-bold">Hope City Church</h4>
+                </span>
+                <ul class="hidden lg:flex gap-10 text-amber-50/80 text-lg">
+
+                    <!-- ABOUT -->
+                    <li class="group relative">
+                        <a href="#"
+                            class="relative pb-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-amber-50 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">About</a>
+                        <div
+                            class="border-spinner absolute left-1/2 top-[150%] hidden w-[600px] -translate-x-1/2 bg-slate-900/70 p-8 shadow-2xl group-hover:block border border-amber-50/10">
+                            <div class="grid grid-cols-2 gap-8 text-white">
+                                <div>
+                                    <h3 class="font-bold text-amber-500 mb-2">Our Mission</h3>
+                                    <p class="text-sm text-gray-300">Dedicated to fostering community growth through
+                                        innovation and creative storytelling.</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-amber-500 mb-2">Leadership</h3>
+                                    <ul class="text-sm text-gray-300 space-y-1">
+                                        <li><a href="#" class="hover:text-amber-400">Board of Directors</a></li>
+                                        <li><a href="#" class="hover:text-amber-400">Our History</a></li>
+                                        <li><a href="#" class="hover:text-amber-400">Financial Reports</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- WATCH -->
+                    <li class="group relative">
+                        <a href="#"
+                            class="relative pb-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-amber-50 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">Watch</a>
+                        <div
+                            class="border-spinner  absolute left-1/2 top-[150%] hidden w-[600px] -translate-x-1/2 bg-slate-900/70 p-8 shadow-2xl group-hover:block border border-amber-50/10">
+                            <div class="grid grid-cols-2 gap-8 text-white">
+                                <div>
+                                    <h3 class="font-bold text-amber-500 mb-2">Latest Series</h3>
+                                    <p class="text-sm text-gray-300">Catch up on our latest documentary releases and
+                                        weekly updates.</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-amber-500 mb-2">Library</h3>
+                                    <ul class="text-sm text-gray-300 space-y-1">
+                                        <li><a href="#" class="hover:text-amber-400">Featured Videos</a></li>
+                                        <li><a href="#" class="hover:text-amber-400">Archives</a></li>
+                                        <li><a href="#" class="hover:text-amber-400">Live Streams</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- GIVE -->
+                    <li class="group relative">
+                        <a href="#"
+                            class="relative pb-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-amber-50 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">Give</a>
+                        <div
+                            class="absolute border-spinner left-1/2 top-[150%] hidden w-[600px] -translate-x-1/2 bg-slate-900/70 p-8 shadow-2xl group-hover:block border border-amber-50/10">
+                            <div class="grid grid-cols-2 gap-8 text-white">
+                                <div>
+                                    <h3 class="font-bold text-amber-500 mb-2">Support Us</h3>
+                                    <p class="text-sm text-gray-300">Your contributions make our projects possible.
+                                        Explore ways to give.</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-amber-500 mb-2">Ways to Contribute</h3>
+                                    <ul class="text-sm text-gray-300 space-y-1">
+                                        <li><a href="#" class="hover:text-amber-400">One-time Donation</a></li>
+                                        <li><a href="#" class="hover:text-amber-400">Monthly Giving</a></li>
+                                        <li><a href="#" class="hover:text-amber-400">Corporate Partnerships</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- CONTACT -->
+                    <li class="group relative">
+                        <a href="#"
+                            class="relative pb-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-amber-50 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">Contact</a>
+                        <div
+                            class=" border-spinner absolute left-1/2 top-[150%] hidden w-[600px] -translate-x-1/2 bg-slate-900/70 p-8 shadow-2xl group-hover:block border border-amber-50/10">
+                            <div class="grid grid-cols-2 gap-8 text-white">
+                                <div>
+                                    <h3 class="font-bold text-amber-500 mb-2">Get in Touch</h3>
+                                    <p class="text-sm text-gray-300">We would love to hear from you. Reach out for
+                                        inquiries or feedback.</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-amber-500 mb-2">Connect</h3>
+                                    <ul class="text-sm text-gray-300 space-y-1">
+                                        <li><a href="#" class="hover:text-amber-400">General Inquiries</a></li>
+                                        <li><a href="#" class="hover:text-amber-400">Support Center</a></li>
+                                        <li><a href="#" class="hover:text-amber-400">Media Requests</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hammenu ">
+                    <button
+                        class="hambtn relative flex items-center justify-center hover:scale-110 transition-all duration-300 lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="white" class="mx-4 size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                    </button>
+                    <div
+                        class="mobile-nav  fixed top-[70px] right-0 z-50 h-[calc(100vh-70px)] w-full sm:w-[350px] bg-slate-900/95 p-8 text-white transition-transform duration-300 ease-in-out translate-x-full">
+                        <ul class="flex h-full flex-col justify-evenly text-2xl font-light">
+                            <li class="border-b  border-white/20 py-4"><a href="#">About</a></li>
+                            <li class="border-b border-white/20 py-4"><a href="#">Watch</a></li>
+                            <li class="border-b border-white/20 py-4"><a href="#">Give</a></li>
+                            <li class="py-4"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <section class="relative h-screen w-full overflow-hidden ">
+
+                <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"></div>
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/50"></div>
+
+
+                <div class="relative z-10 flex h-full items-center justify-start text-white">
+                    <div class="text-left mx-1.5">
+                        <h1 class="text-3xl lg:text-6xl font-bold">Everyone is welcome here.</h1>
+                        <p class="mt-8  lg:text-2xl h-[10vh]  lg:w-4xl text-white/50">Whether you're exploring faith for
+                            the first time
+                            or looking for a
+                            church home, you belong at Hope City.</p>
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <a href="https://www.mto-moyoni.org/programs/soaking/" class="btn-amber">
+                                Plan Your Visit
+                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                    </svg></span>
+                            </a>
+
+                            <a href="https://www.youtube.com/watch?v=z6HJFUuUC-A&list=RDz6HJFUuUC-A&start_radio=1"
+                                class=" flex items-center gap-2 rounded-2xl border border-white/30 bg-black/30 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-black">
+                                <span>▶</span>
+                                Watch Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!-- /////second section -->
+
+        <section class="sec2-wrapper bg-black text-white py-20 px-6 lg:px-20">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+
+
+                <div class="bg-black space-y-8">
+                    <div>
+                        <h4 class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-2">Join Us</h4>
+                        <h2 class="text-5xl font-bold mb-4">Service Times</h2>
+                        <p class="text-gray-400 text-lg">Whether in person or online, we'd love to worship with you.
+                            Join us this weekend!</p>
+                    </div>
+
+
+                    <div class="service-card bg-zinc-900 p-8 rounded-2xl border border-zinc-800">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold">Sunday</h3>
+                            <span class="text-gray-400 text-sm">In-person & Online</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="bg-zinc-800 px-6 py-2 rounded-full font-semibold">9:00 AM</span>
+                            <span class="bg-zinc-800 px-6 py-2 rounded-full font-semibold">11:00 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card bg-zinc-900 p-8 rounded-2xl border border-zinc-800">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold">Wednesday</h3>
+                            <span class="text-gray-400 text-sm">Midweek Service</span>
+                        </div>
+                        <div class="flex">
+                            <span class="bg-zinc-800 px-6 py-2 rounded-full font-semibold">7:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-card bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden flex flex-col">
+                    <div class="h-64 w-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58843.604706083854!2d-97.78109469944006!3d30.30818774642733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s1200%20Grace%20Avenue%2C%20Austin%2C%20TX%2078701!5e1!3m2!1sen!2sde!4v1784403891472!5m2!1sen!2sde"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
+
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">Our Location</h3>
+                        <p class="text-gray-400 mb-6">1200 Grace Avenue<br>Austin, TX 78701</p>
+                        <a href="#"
+                            class="text-amber-500 font-semibold flex items-center gap-2 hover:text-amber-400 transition">
+                            Get Directions ↗
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- ////third section -->
+        <section class="py-20 px-6 lg:px-20 bg-black ">
+            <div class="max-w-7xl mx-auto text-center mb-16">
+                <h4 class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-4">What to Expect</h4>
+                <h2 class="text-5xl font-bold mb-6">You're Invited</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    At Hope City, we believe church should be the best hour of your week. Expect warm welcomes,
+                    uplifting worship, and practical teaching that applies to real life. Come as you are—there's no
+                    dress code, and coffee is always free.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto expect-grid">
+                <!-- Card 1 -->
+                <div
+                    class="expect-card bg-zinc-800 p-8 rounded-2xl hover:bg-zinc-700 transition border-2 hover:border-amber-500">
+                    <div class="bg-zinc-900 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-amber-500 text-2xl">♥</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Welcoming Community</h3>
+                    <p class="text-gray-400">You'll be greeted with a smile and helped to find your way around.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="expect-card bg-zinc-800 p-8 rounded-2xl hover:bg-zinc-700 border-2 hover:border-amber-500 transition">
+                    <div class="bg-zinc-900 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-amber-500 text-2xl">♪</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Engaging Worship</h3>
+                    <p class="text-gray-400">Modern music that inspires and creates space to connect with God.</p>
+                </div>
+
+                <!-- Card 3 (Highlighted) -->
+                <div class="expect-card bg-zinc-800 p-8 rounded-2xl border-2 hover:border-amber-500">
+                    <div class="bg-zinc-900 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-amber-500 text-2xl">📖</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Relevant Teaching</h3>
+                    <p class="text-gray-400">Messages that speak to real life and help you grow in faith.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="expect-card bg-zinc-800 p-8 rounded-2xl hover:bg-zinc-700 transition border-2 hover:border-amber-500">
+                    <div class="bg-zinc-900 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-amber-500 text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Great Kids Programs</h3>
+                    <p class="text-gray-400">Safe, fun, and age-appropriate experiences for birth through 5th grade.</p>
+                </div>
+            </div>
+        </section>
+        <!-- //////444445555 -->
+        <section class="py-20 px-6 lg:px-20 bg-black text-white">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-5xl font-bold">Recent Messages</h2>
+                <a href="#" class="text-amber-500 font-semibold hover:text-amber-400">View All Messages →</a>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="group">
+                    <div class="relative h-[400px] bg-zinc-800 rounded-2xl overflow-hidden mb-6">
+                        <img src="assets/img/main.jfif" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                            <button
+                                class="w-20 h-20 bg-amber-600 rounded-full flex items-center justify-center hover:scale-110 transition">
+                                <a href="#" class="text-white text-3xl">▶</a>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="bg-amber-600 text-xs font-bold px-3 py-1 rounded-full uppercase">Unshakeable</span>
+                    <h3 class="text-3xl font-bold mt-3">Peace in the Storm</h3>
+                    <p class="text-zinc-400 mt-2">Pastor David Chen · January 19, 2025 · 38:24</p>
+                </div>
+
+                <!-- Sidebar List -->
+                <div class="space-y-4">
+                    <div class="bg-zinc-900 p-4 rounded-xl flex gap-4 border border-zinc-800">
+                        <div class="w-32 h-20 bg-zinc-800 rounded-lg relative">
+                            <img src="assets/img/side1.jfif" alt="">
+                            <a href="#" class="text-white absolute top-8 left-15">▶</a>
+                            <span class="absolute bottom-1 right-1 bg-black/80 text-[10px] px-1 rounded">42:15</span>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <span class="text-amber-500 text-[10px] font-bold uppercase">Unshakeable</span>
+                            <h4 class="font-bold">Faith Over Fear</h4>
+                            <p class="text-zinc-500 text-xs">Pastor David Chen · January 12, 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 p-4 rounded-xl flex gap-4 border border-zinc-800">
+                        <div class="w-32 h-20 bg-zinc-800 rounded-lg relative">
+                            <img src="assets/img/side2.jfif" alt="">
+                            <a href="#" class="text-white absolute top-8 left-15">▶</a>
+                            <span class="absolute bottom-1 right-1 bg-black/80 text-[10px] px-1 rounded">35:52</span>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <span class="text-amber-500 text-[10px] font-bold uppercase">Unshakeable</span>
+                            <h4 class="font-bold">Built to Last</h4>
+                            <p class="text-zinc-500 text-xs">Pastor David Chen · January 5, 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-dashed border-zinc-700 rounded-xl p-6 text-center mt-6">
+                        <p class="text-zinc-400 font-semibold flex items-center justify-center gap-2">
+                            <span>📺</span> Watch Live Every Sunday
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /////44444/// -->
+        <section class="py-20 px-6 lg:px-20 bg-black">
+            <div class="max-w-7xl mx-auto text-center mb-16">
+                <h4 class="text-amber-500 font-bold tracking-widest uppercase text-sm mb-4">Stories</h4>
+                <h2 class="text-5xl font-bold mb-6">Real People. Real Hope.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- Story Card 1 -->
+                <div class="bg-zinc-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-amber-600 text-4xl mb-4 block">❝</span>
+                        <p class="text-gray-300 italic mb-6">"We visited Hope City during a really hard season in our
+                            lives. From the first moment, we felt like family. This church has helped us heal and grow
+                            in ways we never expected."</p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <img src="assets/img/1.jfif" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">The Martinez Family</h4>
+                            <p class="text-sm text-gray-500">Members since 2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Card 2 -->
+                <div class="bg-zinc-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-amber-600 text-4xl mb-4 block">❝</span>
+                        <p class="text-gray-300 italic mb-6">"I wasn't sure what I believed about God, but the people
+                            here welcomed my questions without judgment. Hope City gave me space to explore faith at my
+                            own pace."</p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <img src="assets/img/2.jfif" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">James K.</h4>
+                            <p class="text-sm text-gray-500">Member since 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Card 3 -->
+                <div class="bg-zinc-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <span class="text-amber-600 text-4xl mb-4 block">❝</span>
+                        <p class="text-gray-300 italic mb-6">"The kids program here is incredible. My daughter actually
+                            asks to go to church! And the messages help me be a better parent throughout the week."</p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <img src="assets/img/3.jfif" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">Michelle T.</h4>
+                            <p class="text-sm text-gray-500">Member since 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /55555555555// -->
+
+        <div class="sec6"></div>
+        <div class="sec7"></div>
+    </main>
+    <footer class="bg-zinc-950 border-t border-zinc-900 py-16 px-6 lg:px-20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <!-- Brand / Identity Column -->
+            <div class="col-span-1 space-y-4">
+                <div class="w-16 h-16 bg-amber-500 rounded-xl flex items-center justify-center">
+                    <!-- Replace with your logo -->
+                    <span class="text-black font-bold">HC</span>
+                </div>
+                <h3 class="font-bold text-white text-xl">Hope City Church</h3>
+                <p class="text-zinc-400 text-sm">Hope City Church is a welcoming community in Austin, TX where everyone
+                    belongs. Join us Sundays at 9:00 AM or 11:00 AM.</p>
+                <div class="flex gap-3 pt-2">
+                    <a href="#"
+                        class="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center hover:bg-zinc-700">F</a>
+                    <a href="#"
+                        class="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center hover:bg-zinc-700">I</a>
+                    <a href="#"
+                        class="w-10 h-10 bg-zinc-800 rounded-lg flex items-center justify-center hover:bg-zinc-700">Y</a>
+                </div>
+            </div>
+
+            <!-- Links Columns -->
+            <div>
+                <h4 class="font-bold text-amber-500 mb-6 uppercase tracking-wider text-sm">Visit</h4>
+                <ul class="space-y-4 text-zinc-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Service Times</a></li>
+                    <li><a href="#" class="hover:text-white transition">Plan Your Visit</a></li>
+                    <li><a href="#" class="hover:text-white transition">What to Expect</a></li>
+                    <li><a href="#" class="hover:text-white transition">Directions</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-amber-500 mb-6 uppercase tracking-wider text-sm">Connect</h4>
+                <ul class="space-y-4 text-zinc-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition">Join a Group</a></li>
+                    <li><a href="#" class="hover:text-white transition">Serve</a></li>
+                    <li><a href="#" class="hover:text-white transition">Give</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-amber-500 mb-6 uppercase tracking-wider text-sm">Resources</h4>
+                <ul class="space-y-4 text-zinc-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Watch Sermons</a></li>
+                    <li><a href="#" class="hover:text-white transition">Podcast</a></li>
+                    <li><a href="#" class="hover:text-white transition">Hope City Kids</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 pt-12 border-t border-zinc-900">
+            <div>
+                <h4 class="text-zinc-500 text-xs font-bold uppercase mb-2">Location</h4>
+                <p class="text-white text-sm">1200 Grace Avenue, Austin, TX 78701</p>
+            </div>
+            <div>
+                <h4 class="text-zinc-500 text-xs font-bold uppercase mb-2">Contact</h4>
+                <p class="text-white text-sm">(555) 234-5678</p>
+                <p class="text-white text-sm">hello@hopecitychurch.com</p>
+            </div>
+            <div>
+                <h4 class="text-zinc-500 text-xs font-bold uppercase mb-2">Service Times</h4>
+                <p class="text-white text-sm">Sundays 9:00 AM & 11:00 AM</p>
+                <p class="text-white text-sm">Wednesday 7:00 PM</p>
+            </div>
+        </div>
+
+
+        <div
+            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-zinc-600 text-sm">
+            <p>© 2026 Hope City Church.Redesigned and Redeveloped by me</p>
+
+            <div class="flex flex-col md:flex-row items-center gap-6 mt-4 md:mt-0">
+                <img src="assets/img/my-photo.jpg.png"
+                    class="w-20 h-20 rounded-full bg-zinc-800 border border-zinc-700 overflow-hidden">
+                </img>
+
+                <span class="text-zinc-500">Elyas Forghani</span>
+                <div class="flex gap-4">
+                    <a href="https://www.linkedin.com/in/alireza-forghani-b4746b263/" target="_blank"
+                        class="hover:text-amber-500 transition">LinkedIn</a>
+                    <a href="https://github.com/Elyasforghani" target="_blank"
+                        class="hover:text-amber-500 transition">GitHub</a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="assets/script/master.js"></script>
+
+</html>
